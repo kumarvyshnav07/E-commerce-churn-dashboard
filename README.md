@@ -1,1 +1,1 @@
-# E-commerce-churn-dashboard
+# Ecommerce-churn-dashboard
