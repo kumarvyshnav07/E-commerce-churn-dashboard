@@ -36,7 +36,7 @@ The dataset used in this project is publicly available on Kaggle:
 
 🖼️ Dashboard 1: Executive Sales & Churn Overview
 
-"Dashboard 1" (overview.png)
+![Dashboard 1](overview.png)
 
 🔍 Provides a high-level view of sales performance, churn rate, and key business metrics.
 
@@ -44,7 +44,7 @@ The dataset used in this project is publicly available on Kaggle:
 
 📊 Dashboard 2: Customer Lifetime Value Analysis
 
-"Dashboard 2" (churn.png)
+1[Dashboard 2](churn.png)
 
 🔍 Analyzes customer value over time, helping identify high-value customers and retention opportunities.
 ▶️ How to Use
