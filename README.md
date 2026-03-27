@@ -1,59 +1,88 @@
-📊 E-commerce Churn Dashboard
+# 📊 E-Commerce Customer Churn Dashboard
 
-📌 Description
+## 📌 Overview
 
-An interactive Power BI dashboard to analyze customer churn in an e-commerce business and uncover meaningful insights.
-
-🎯 Objective
-
-- Identify factors affecting customer churn
-- Improve customer retention
-- Support business decision-making
-
-🛠️ Tools Used
-
-- Power BI
-- Excel
-- DAX
-
-📊 Dashboard Features
-
-- Customer segmentation
-- Churn rate analysis
-- Revenue insights
-- Interactive filters and slicers
-
-📈 Key Insights
-
-- High churn observed among low-value customers
-- Repeat customers generate around 60% of total revenue
-
-📂 Dataset
-
-The dataset used in this project is publicly available on Kaggle:
-
-🔗 (https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset)
-
-🖼️ Dashboard 1: Executive Sales & Churn Overview
-
-![Dashboard 1](overview.png)
-
-🔍 Provides a high-level view of sales performance, churn rate, and key business metrics.
+This project showcases an interactive **Power BI dashboard** built to analyze customer churn, engagement, and revenue patterns in an e-commerce business. It helps identify at-risk customers and supports better retention strategies.
 
 ---
 
-📊 Dashboard 2: Customer Lifetime Value Analysis
+## 🎯 Objective
 
-![Dashboard 2](churn.png)
+* Understand customer churn behavior
+* Analyze revenue contribution by segments
+* Identify opportunities to improve retention
 
-🔍 Analyzes customer value over time, helping identify high-value customers and retention opportunities.
-▶️ How to Use
+---
 
-1. Download the ".pbix" file
-2. Open it using Power BI Desktop
-3. Explore the dashboard using filters
+## 🛠️ Tools Used
 
-🚀 Future Improvements
+* Power BI
+* Excel
+* DAX
 
-- Add machine learning model for churn prediction
-- Deploy dashboard online for real-time insights
+---
+
+## 📊 Dashboard Highlights
+
+* **KPI Overview**: Revenue, Purchases, Churn Rate, Revenue Lost
+* **Customer Segmentation**: High, Medium, Low-value customers
+* **Churn Analysis**: Contribution by segment and trends over time
+* **Customer Lifetime Value (CLV)**: Value patterns across tenure
+* **Engagement Metrics**: Session duration & login frequency
+* **Geographic Insights**: Region-wise churn distribution
+* **Interactive Filters** for better exploration
+
+---
+
+## 📈 Key Insights
+
+* Low-value customers show the **highest churn rate**
+* Repeat customers contribute **~60% of total revenue**
+* Higher engagement is strongly linked to **customer retention**
+* Churn patterns vary across different regions
+
+---
+
+## 💡 Business Recommendations
+
+* Target low-value customers with retention campaigns
+* Introduce loyalty programs for repeat customers
+* Improve engagement using personalized offers
+* Focus on high-churn regions for better marketing
+
+---
+
+## 📂 Dataset
+Public dataset from Kaggle:
+https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset
+---
+
+## 🖼️ Dashboard Preview
+
+### Executive Overview
+
+![Overview](overview.png)
+
+### Churn & CLV Analysis
+
+![Churn](churn.png)
+
+---
+
+## ▶️ How to Use
+
+1. Download the `.pbix` file
+2. Open in Power BI Desktop
+3. Explore using filters and slicers
+
+---
+
+## 🚀 Future Improvements
+
+* Add churn prediction using machine learning
+* Deploy dashboard to Power BI Service
+* Include advanced retention/cohort analysis
+
+---
+
+⭐ If you like this project, give it a star!
