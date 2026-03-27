@@ -42,9 +42,6 @@ The dataset used in this project is publicly available on Kaggle:
 
 ---
 
-
-
-
 📊 Dashboard 2: Customer Lifetime Value Analysis
 
 ![Dashboard 2](churn.png)
