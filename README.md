@@ -34,14 +34,19 @@ The dataset used in this project is publicly available on Kaggle:
 
 🔗 (https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset)
 
-🖼️ Dashboard Preview
+🖼️ Dashboard 1: Executive Sales & Churn Overview
 
-"Dashboard" (Images/dashboard.png)
+"Dashboard 1" (Images/overview.png)
 
-📊 Overview
+🔍 Provides a high-level view of sales performance, churn rate, and key business metrics.
 
-"Overview" (Images/overview.png)
+---
 
+📊 Dashboard 2: Customer Lifetime Value Analysis
+
+"Dashboard 2" (Images/churn.png)
+
+🔍 Analyzes customer value over time, helping identify high-value customers and retention opportunities.
 ▶️ How to Use
 
 1. Download the ".pbix" file
