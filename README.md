@@ -42,9 +42,12 @@ The dataset used in this project is publicly available on Kaggle:
 
 ---
 
+
+
+
 📊 Dashboard 2: Customer Lifetime Value Analysis
 
-1[Dashboard 2](churn.png)
+![Dashboard 2](churn.png)
 
 🔍 Analyzes customer value over time, helping identify high-value customers and retention opportunities.
 ▶️ How to Use
