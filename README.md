@@ -1,5 +1,3 @@
-Here’s your **final, polished, recruiter-ready README (10/10)** — clean, professional, and ready to paste into GitHub 🚀
-
 ---
 
 # 📊 E-Commerce Customer Churn Dashboard
