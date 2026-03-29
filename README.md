@@ -91,11 +91,11 @@ CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
 
 ### Executive Overview
 
-![Executive Dashboard](your-image-link-here)
+![Executive Dashboard](overview.png)
 
 ### Churn & CLV Analysis
 
-![Churn Dashboard](your-image-link-here)
+![Churn Dashboard](churn.png)
 
 ---
 
