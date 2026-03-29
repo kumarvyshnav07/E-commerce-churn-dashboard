@@ -57,18 +57,6 @@ It helps identify **at-risk customers**, uncover revenue leakage, and support **
 
 ---
 
-## 🧮 Sample DAX Measures
-
-```DAX
-Churn Rate = 
-DIVIDE([Churned Customers], [Total Customers])
-
-Revenue Lost = 
-CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
-```
-
----
-
 ## 📈 Key Insights
 
 * Low-value customers show the **highest churn rate**
@@ -96,6 +84,18 @@ CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
 * Introduce loyalty programs for repeat customers
 * Improve engagement through personalized offers
 * Focus marketing efforts on high-churn regions
+
+---
+
+## 🧮 Sample DAX Measures
+
+```DAX
+Churn Rate = 
+DIVIDE([Churned Customers], [Total Customers])
+
+Revenue Lost = 
+CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
+```
 
 ---
 
