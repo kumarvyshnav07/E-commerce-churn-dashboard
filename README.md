@@ -117,6 +117,7 @@ CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
 ---
 
 ## 📂 Dataset
+* dataset sourced from kaggle, containing customer behavior and transaction data for churn analysis
 
 [https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset](https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset)
 
