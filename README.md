@@ -78,15 +78,6 @@ CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
 
 ---
 
-## 💡 Business Recommendations
-
-* Target low-value customers with retention campaigns
-* Introduce loyalty programs for repeat customers
-* Improve engagement through personalized offers
-* Focus marketing efforts on high-churn regions
-
----
-
 ## 📸 Dashboard Preview
 
 ### Executive Overview
@@ -96,6 +87,15 @@ CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
 ### Churn & CLV Analysis
 
 ![Churn Dashboard](churn.png)
+
+---
+
+## 💡 Business Recommendations
+
+* Target low-value customers with retention campaigns
+* Introduce loyalty programs for repeat customers
+* Improve engagement through personalized offers
+* Focus marketing efforts on high-churn regions
 
 ---
 
