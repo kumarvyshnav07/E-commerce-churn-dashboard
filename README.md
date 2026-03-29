@@ -123,11 +123,12 @@ CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
 
 ---
 
+## 🙌 Conclusion
+This project demonstrates practical application of data analytics and visualization techniques to solve real-world business problems in customer retention.
+
+---
+
 ## ⭐ Support
 
 If you found this project useful, consider giving it a **star ⭐** on GitHub!
 
-
-If you want next:
-👉 I can create a **high-impact LinkedIn post** for this
-👉 Or help you build your **next AI/ML project (to impress recruiters even more)** 🚀
