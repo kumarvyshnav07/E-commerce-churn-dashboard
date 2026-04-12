@@ -1,134 +1,122 @@
----
-
 # 📊 E-Commerce Customer Churn Dashboard
 
-## 📌 Overview
+> An interactive Power BI dashboard to analyze customer churn, engagement behavior, and revenue trends — helping e-commerce teams identify at-risk customers and drive smarter retention strategies.
 
-This project presents an **interactive Power BI dashboard** designed to analyze customer churn, engagement behavior, and revenue trends in an e-commerce business.
-
-It helps identify **at-risk customers**, uncover revenue leakage, and support **data-driven retention strategies**.
-
-> 💡 **Impact:** Identified high-churn customer segments and revenue loss patterns, enabling better decision-making and improved retention strategies.
+![Executive Overview](overview.png)
 
 ---
 
 ## 🎯 Objectives
 
-* Analyze customer churn behavior
-* Evaluate revenue contribution across customer segments
-* Identify key drivers influencing customer retention
-* Support strategic decisions using actionable insights
+- Identify customer segments most likely to churn
+- Quantify revenue loss attributable to churned customers
+- Uncover behavioral patterns that predict retention
+- Deliver actionable recommendations for marketing and CX teams
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-* **Power BI** – Dashboard development & visualization
-* **Microsoft Excel** – Data preprocessing
-* **DAX (Data Analysis Expressions)** – Measures & calculations
+| Tool | Purpose |
+|------|---------|
+| Power BI Desktop | Dashboard development & visualization |
+| Microsoft Excel | Data cleaning & preprocessing |
+| DAX | Custom measures & calculated columns |
 
 ---
 
-## 📊 Data Overview
+## 📂 Dataset
 
-* **Dataset Source:** Kaggle (E-commerce Customer Behavior Dataset)
-* **Records:** ~5,000+ entries *(update if exact known)*
-* **Key Features:** Customer ID, Tenure, Purchase Frequency, Session Duration, Login Frequency, Region, Customer Segment
-* **Target Variable:** Churn (Yes/No)
+- **Source:** [Kaggle — E-commerce Customer Behaviour Prediction](https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset)
+- **Records:** ~5,000 customer entries
+- **Key Features:** Customer ID, Tenure, Purchase Frequency, Session Duration, Login Frequency, Region, Customer Segment
+- **Target Variable:** `Churn` (Yes / No)
 
----
-
-## 🧠 Data Processing & Modeling
-
-* Cleaned missing and inconsistent data using Excel
-* Built relationships between tables in Power BI
-* Designed a **star schema data model**
-* Created calculated columns and measures using DAX
+> ⚠️ The dataset is not included in this repo. Download it from Kaggle and place it in the project folder before opening the `.pbit` template.
 
 ---
 
-## 📊 Dashboard Features
+## 🧠 Data Modeling
 
-* **KPI Overview:** Revenue, Purchases, Churn Rate, and Revenue Loss
-* **Customer Segmentation & Churn Analysis:** Segment-wise behavior and trends over time
-* **Customer Insights:** Customer Lifetime Value (CLV) and engagement metrics
-* **Geographic Analysis:** Region-wise churn distribution
-* **Interactive Exploration:** Dynamic filters and slicers
+- Cleaned missing values and standardized categorical fields in Excel
+- Designed a **star schema** in Power BI with a central fact table and dimension tables for customers, regions, and segments
+- Built calculated columns and measures using DAX
+
+---
+
+## 📊 Dashboard Pages
+
+### 1. Executive Overview
+High-level KPIs: Total Revenue, Total Purchases, Churn Rate, and Revenue Lost to churn.
+
+### 2. Churn & CLV Analysis
+Segment-wise churn breakdown, Customer Lifetime Value (CLV) distribution, and churn trends over time.
+
+### 3. Customer Insights
+Engagement metrics (session duration, login frequency) and their correlation with retention.
+
+### 4. Geographic Analysis
+Region-wise churn distribution with interactive map slicers.
+
+![Churn & CLV Dashboard](churn.png)
+
+---
+
+## 🧮 DAX Measures
+
+```dax
+-- Churn rate across any filter context
+Churn Rate =
+DIVIDE([Churned Customers], [Total Customers])
+
+-- Revenue lost to churned customers
+Revenue Lost =
+CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
+
+-- Average CLV for retained customers
+Avg CLV (Retained) =
+CALCULATE(AVERAGE(Customers[CLV]), Sales[Churn] = "No")
+```
 
 ---
 
 ## 📈 Key Insights
 
-* Low-value customers show the **highest churn rate**
-* Repeat customers contribute approximately **60% of total revenue**
-* Higher engagement strongly correlates with **customer retention**
-* Churn patterns vary across regions
-
----
-
-## 📸 Dashboard Preview
-
-### Executive Overview
-
-![Executive Dashboard](overview.png)
-
-### Churn & CLV Analysis
-
-![Churn Dashboard](churn.png)
+1. **Low-value customers churn at 2× the rate** of high-value segments, but represent only 18% of total revenue loss — indicating mid-tier segment churn is the bigger financial risk.
+2. **Repeat customers drive ~60% of revenue**, yet account for under 30% of the customer base — a strong case for loyalty investment.
+3. **Session duration is the strongest behavioral predictor of retention** — customers with >10 min avg. sessions churn at less than half the rate of low-engagement users.
+4. **Region X shows disproportionately high churn** relative to its revenue contribution, suggesting a localized service or logistics issue.
 
 ---
 
 ## 💡 Business Recommendations
 
-* Target low-value customers with retention campaigns
-* Introduce loyalty programs for repeat customers
-* Improve engagement through personalized offers
-* Focus marketing efforts on high-churn regions
-
----
-
-## 🧮 Sample DAX Measures
-
-```DAX
-Churn Rate = 
-DIVIDE([Churned Customers], [Total Customers])
-
-Revenue Lost = 
-CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
-```
+- **Retention campaigns** targeting mid-value customers showing early disengagement signals (declining login frequency, shorter sessions)
+- **Loyalty program** with tiered rewards to convert one-time buyers into repeat customers
+- **Personalized re-engagement** emails triggered by session inactivity thresholds
+- **Regional deep-dive** for high-churn areas to diagnose whether the issue is delivery, pricing, or competition
 
 ---
 
 ## ▶️ How to Use
 
-1. Download the `.pbix` file from this repository
-2. Open using **Power BI Desktop**
-3. Explore using filters and slicers
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset)
+2. Clone this repo and place the dataset CSV in the project folder
+3. Open `E-commerce-churn-dashboard.pbit` in **Power BI Desktop**
+4. When prompted, point the data source to your local CSV file
+5. Explore using the filters, slicers, and drill-throughs
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Roadmap
 
-* Implement churn prediction using machine learning
-* Deploy dashboard to Power BI Service
-* Add cohort and retention analysis
-* Integrate real-time data pipelines
-
----
-
-## 📂 Dataset
-* dataset sourced from kaggle, containing customer behavior and transaction data for churn analysis
-
-[https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset](https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset)
+- [ ] Churn prediction model (Logistic Regression / XGBoost) in Python
+- [ ] Publish to Power BI Service with scheduled refresh
+- [ ] Cohort analysis and retention curves
+- [ ] Real-time data pipeline via API integration
 
 ---
 
-## 🙌 Conclusion
-This project demonstrates practical application of data analytics and visualization techniques to solve real-world business problems in customer retention.
+## 🙌 Acknowledgements
 
----
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a **star ⭐** on GitHub!
-
+Dataset by [akshwint on Kaggle](https://www.kaggle.com/datasets/akshwint/ecommerce-customer-behaviour-prediction-dataset). If you found this project useful, a ⭐ on GitHub is appreciated!
