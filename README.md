@@ -1,5 +1,5 @@
----
 # 📊 E-Commerce Customer Churn Dashboard
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/kumarvyshnav07/E-commerce-churn-dashboard/blob/main/README.md)
 ## 📌 Overview
 This project presents an **interactive Power BI dashboard** designed to analyze customer churn, engagement behavior, and revenue trends in an e-commerce business.
 It helps identify **at-risk customers**, uncover revenue leakage, and support **data-driven retention strategies**.
@@ -80,4 +80,4 @@ CALCULATE(SUM(Sales[Revenue]), Sales[Churn] = "Yes")
 This project demonstrates practical application of data analytics and visualization techniques to solve real-world business problems in customer retention.
 ---
 ## ⭐ Support
-If you found this project useful, consider giving it a **star ⭐** on GitHub!
+If you found this project useful, consider giving it a **star ⭐** on GitHub
